@@ -128,5 +128,5 @@ Released under the [MIT License] by [Michael van Rooijen].
 [Docker Tags]: https://hub.docker.com/r/meskyanichi/phoenix/tags/
 [Phoenix]: http://www.phoenixframework.org
 [Alpine Linux]: http://www.alpinelinux.org
-[MIT License]: https://github.com/meskyanichi/dockerized-phoenix/blob/master/LICENSE
-[Michael van Rooijen]: https://twitter.com/meskyanichi
+[MIT License]: https://github.com/mrrooijen/dockerized-phoenix/blob/master/LICENSE
+[Michael van Rooijen]: https://twitter.com/mrrooijen

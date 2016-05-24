@@ -27,7 +27,7 @@ The included Phoenix version is useful when starting new Phoenix projects. You a
 Run any command like so:
 
 ```sh
-docker run --rm -v $(pwd):/cwd -ti meskyanichi/phoenix [command]
+docker run --rm -v $(pwd):/cwd -ti mrrooijen/phoenix [command]
 ```
 
 *When leaving out the command, it'll default to `/bin/sh`.*
@@ -35,13 +35,13 @@ docker run --rm -v $(pwd):/cwd -ti meskyanichi/phoenix [command]
 To generate a new Phoenix project, execute the following command:
 
 ```sh
-docker run --rm -v $(pwd):/cwd -ti meskyanichi/phoenix mix phoenix.new my_new_app
+docker run --rm -v $(pwd):/cwd -ti mrrooijen/phoenix mix phoenix.new my_new_app
 ```
 
 If you want to use a version of Phoenix newer than the one provided in this image, you can install it manually prior to generating a new project:
 
 ```sh
-docker run --rm -v $(pwd):/cwd -ti meskyanichi/phoenix
+docker run --rm -v $(pwd):/cwd -ti mrrooijen/phoenix
 mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez
 mix phoenix.new my_new_app
 ```
@@ -54,7 +54,7 @@ When working on an existing project, simply use `mix deps.get` to pull in all de
 If you need to extend this image you can easily do so by creating your own `Dockerfile`. For example, if your program depends on PostgreSQL, you'll need to install the PostgreSQL client like so:
 
 ```Dockerfile
-FROM meskyanichi/phoenix:latest
+FROM mrrooijen/phoenix:latest
 RUN apk --no-cache add postgresql-client 
 ```
 
@@ -84,7 +84,7 @@ db:
 Add `Dockerfile.local`:
 
 ```Dockerfile
-FROM meskyanichi/phoenix
+FROM mrrooijen/phoenix
 RUN apk --no-cache add postgresql-client 
 ```
 
@@ -125,7 +125,7 @@ Released under the [MIT License] by [Michael van Rooijen].
 
 [Docker]: https://www.docker.com/
 [Docker Compose]: https://docs.docker.com/compose/
-[Docker Tags]: https://hub.docker.com/r/meskyanichi/phoenix/tags/
+[Docker Tags]: https://hub.docker.com/r/mrrooijen/phoenix/tags/
 [Phoenix]: http://www.phoenixframework.org
 [Alpine Linux]: http://www.alpinelinux.org
 [MIT License]: https://github.com/mrrooijen/dockerized-phoenix/blob/master/LICENSE

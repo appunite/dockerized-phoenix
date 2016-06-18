@@ -3,7 +3,7 @@ FROM mhart/alpine-node:latest
 
 # Configuration
 
-ENV ELIXIR_VERSION 1.2.3
+ENV ELIXIR_VERSION 1.3.0-rc.1
 
 
 # Utils
@@ -47,7 +47,7 @@ RUN mix local.hex --force && \
 # Phoenix
 
 RUN yes | mix archive.install \
-  https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez
+   https://github.com/phoenixframework/archives/raw/master/1.2-rc/phoenix_new.ez
 
 
 # Init

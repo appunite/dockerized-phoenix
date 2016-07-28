@@ -47,7 +47,7 @@ RUN mix local.hex --force && \
 # Phoenix
 
 RUN yes | mix archive.install \
-   https://github.com/phoenixframework/archives/raw/master/1.2/phoenix_new.ez
+   https://github.com/phoenixframework/archives/raw/master/1.2.0/phoenix_new.ez
 
 
 # Init
